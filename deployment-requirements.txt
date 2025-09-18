@@ -1,0 +1,31 @@
+# Deployment-specific requirements for StreamCloud
+# Pinned versions for stability
+
+numpy==1.24.3
+opencv-python-headless==4.8.1.78
+Pillow==10.0.1
+matplotlib==3.7.2
+scipy==1.11.3
+scikit-learn==1.3.2
+
+# Web interface dependencies
+streamlit==1.28.1
+plotly==5.18.0
+
+# Image processing
+scikit-image==0.22.0
+
+# Document generation
+python-docx==0.8.11
+
+# Visualization
+seaborn==0.13.0
+
+# Additional system dependencies (these will help with matplotlib installation)
+kiwisolver==1.4.5
+cycler==0.12.1
+fonttools==4.44.3
+python-dateutil==2.8.2
+pyparsing==3.1.1
+contourpy==1.1.1
+packaging==23.2

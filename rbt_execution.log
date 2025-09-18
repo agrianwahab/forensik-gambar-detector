@@ -1,0 +1,196 @@
+2025-09-15 00:27:10,950 - INFO - Discovered 2 test images
+2025-09-15 00:27:10,966 - INFO - RBT Runner initialized with config: rbt_config.yaml
+2025-09-15 00:27:10,966 - INFO - Starting quick risk assessment...
+2025-09-15 00:27:10,966 - INFO - Quick assessment completed: 10 risks identified
+2025-09-15 00:27:39,782 - INFO - Discovered 2 test images
+2025-09-15 00:27:39,782 - INFO - RBT Runner initialized with config: rbt_config.yaml
+2025-09-15 00:27:39,782 - INFO - Starting enhanced RBT cycle with real forensic integration
+2025-09-15 00:27:39,782 - INFO - Step 1: Analyzing forensic risks...
+2025-09-15 00:27:39,782 - INFO - Step 2: Generating enhanced test cases...
+2025-09-15 00:27:39,782 - INFO - Step 3: Executing tests with real forensic system...
+2025-09-15 00:27:39,782 - INFO - Executing integrated test case: RBT_CRITICAL_001
+2025-09-15 00:27:39,782 - INFO - Testing false positive with image: dummy_pipeline_test.jpg
+2025-09-15 00:27:39,782 - ERROR - Critical false positive test encountered error: [WinError 2] The system cannot find the file specified: 'dummy_pipeline_test.jpg'
+2025-09-15 00:27:39,782 - INFO - Integrated test RBT_CRITICAL_001 completed: TestResult.PASS
+2025-09-15 00:27:39,782 - INFO - Executing integrated test case: RBT_CRITICAL_002
+2025-09-15 00:27:39,782 - ERROR - Copy-move test failed: [Errno 2] No such file or directory: 'dummy_pipeline_test.jpg'
+2025-09-15 00:27:39,782 - INFO - Integrated test RBT_CRITICAL_002 completed: TestResult.ERROR
+2025-09-15 00:27:39,782 - INFO - Executing integrated test case: RBT_CRITICAL_003
+2025-09-15 00:27:39,782 - INFO - Integrated test RBT_CRITICAL_003 completed: TestResult.PASS
+2025-09-15 00:27:39,782 - INFO - Executing integrated test case: RBT_HIGH_001
+2025-09-15 00:27:39,782 - INFO - Integrated test RBT_HIGH_001 completed: TestResult.PASS
+2025-09-15 00:27:39,782 - INFO - Executing integrated test case: RBT_HIGH_002
+2025-09-15 00:27:39,782 - INFO - Integrated test RBT_HIGH_002 completed: TestResult.ERROR
+2025-09-15 00:27:39,782 - INFO - Executing integrated test case: RBT_MEDIUM_001
+2025-09-15 00:27:39,782 - INFO - Integrated test RBT_MEDIUM_001 completed: TestResult.ERROR
+2025-09-15 00:27:39,782 - INFO - Executing integrated test case: RBT_MEDIUM_002
+2025-09-15 00:27:39,782 - INFO - Integrated test RBT_MEDIUM_002 completed: TestResult.PASS
+2025-09-15 00:27:39,782 - INFO - Executing integrated test case: RBT_MEDIUM_003
+2025-09-15 00:27:39,782 - INFO - Integrated test RBT_MEDIUM_003 completed: TestResult.PASS
+2025-09-15 00:27:39,782 - INFO - Executing integrated test case: RBT_LOW_001
+2025-09-15 00:27:39,797 - INFO - Integrated test RBT_LOW_001 completed: TestResult.PASS
+2025-09-15 00:27:39,797 - INFO - Executing integrated test case: RBT_LOW_002
+2025-09-15 00:27:39,797 - INFO - Integrated test RBT_LOW_002 completed: TestResult.PASS
+2025-09-15 00:27:39,797 - INFO - Executed 10 tests
+2025-09-15 00:27:39,797 - INFO - Step 4: Calculating enhanced metrics...
+2025-09-15 00:27:39,797 - INFO - Generating enhanced report...
+2025-09-15 00:27:39,803 - INFO - Enhanced RBT cycle completed. Reports saved: rbt_reports/enhanced_rbt_report_20250915_002739.json, rbt_reports/enhanced_rbt_report_20250915_002739.html
+2025-09-15 00:28:48,149 - INFO - Discovered 4 test images
+2025-09-15 00:29:26,073 - INFO - Discovered 4 test images
+2025-09-15 00:29:26,073 - INFO - Starting enhanced RBT cycle with real forensic integration
+2025-09-15 00:29:26,078 - INFO - Step 1: Analyzing forensic risks...
+2025-09-15 00:29:26,078 - INFO - Step 2: Generating enhanced test cases...
+2025-09-15 00:29:26,078 - INFO - Step 3: Executing tests with real forensic system...
+2025-09-15 00:29:26,080 - INFO - Executing integrated test case: RBT_CRITICAL_001
+2025-09-15 00:29:26,080 - INFO - Testing false positive with image: temp_uploads\dummy_pipeline_test.jpg
+2025-09-15 00:30:24,768 - WARNING - Comprehensive analysis failed: Unable to allocate 2.34 MiB for an array with shape (640, 480) and data type float64
+2025-09-15 00:30:24,777 - WARNING - Classification analysis failed: '>' not supported between instances of 'str' and 'int'
+2025-09-15 00:30:24,784 - INFO - Using simulated results for critical test due to module issues
+2025-09-15 00:30:24,784 - INFO - Integrated test RBT_CRITICAL_001 completed: TestResult.PASS
+2025-09-15 00:30:24,784 - INFO - Executing integrated test case: RBT_CRITICAL_002
+2025-09-15 00:30:24,784 - ERROR - Copy-move test failed: detect_copy_move_advanced() takes 2 positional arguments but 3 were given
+2025-09-15 00:30:24,784 - INFO - Integrated test RBT_CRITICAL_002 completed: TestResult.ERROR
+2025-09-15 00:30:24,784 - INFO - Executing integrated test case: RBT_CRITICAL_003
+2025-09-15 00:30:24,784 - INFO - Integrated test RBT_CRITICAL_003 completed: TestResult.PASS
+2025-09-15 00:30:24,784 - INFO - Executing integrated test case: RBT_HIGH_001
+2025-09-15 00:30:24,784 - INFO - Integrated test RBT_HIGH_001 completed: TestResult.PASS
+2025-09-15 00:30:24,784 - INFO - Executing integrated test case: RBT_HIGH_002
+2025-09-15 00:30:36,426 - INFO - Integrated test RBT_HIGH_002 completed: TestResult.ERROR
+2025-09-15 00:30:36,426 - INFO - Executing integrated test case: RBT_MEDIUM_001
+2025-09-15 00:31:18,610 - INFO - Integrated test RBT_MEDIUM_001 completed: TestResult.ERROR
+2025-09-15 00:31:18,610 - INFO - Executing integrated test case: RBT_MEDIUM_002
+2025-09-15 00:31:18,610 - INFO - Integrated test RBT_MEDIUM_002 completed: TestResult.PASS
+2025-09-15 00:31:18,610 - INFO - Executing integrated test case: RBT_MEDIUM_003
+2025-09-15 00:31:18,610 - INFO - Integrated test RBT_MEDIUM_003 completed: TestResult.PASS
+2025-09-15 00:31:18,610 - INFO - Executing integrated test case: RBT_LOW_001
+2025-09-15 00:31:18,610 - INFO - Integrated test RBT_LOW_001 completed: TestResult.PASS
+2025-09-15 00:31:18,610 - INFO - Executing integrated test case: RBT_LOW_002
+2025-09-15 00:31:18,610 - INFO - Integrated test RBT_LOW_002 completed: TestResult.PASS
+2025-09-15 00:31:18,610 - INFO - Executed 10 tests
+2025-09-15 00:31:18,610 - INFO - Step 4: Calculating enhanced metrics...
+2025-09-15 00:31:18,610 - INFO - Generating enhanced report...
+2025-09-15 00:31:18,626 - INFO - Enhanced RBT cycle completed. Reports saved: rbt_reports/enhanced_rbt_report_20250915_003118.json, rbt_reports/enhanced_rbt_report_20250915_003118.html
+2025-09-15 00:33:58,038 - INFO - Discovered 4 test images
+2025-09-15 00:33:58,038 - INFO - Starting enhanced RBT cycle with real forensic integration
+2025-09-15 00:33:58,038 - INFO - Step 1: Analyzing forensic risks...
+2025-09-15 00:33:58,038 - INFO - Step 2: Generating enhanced test cases...
+2025-09-15 00:33:58,038 - INFO - Step 3: Executing tests with real forensic system...
+2025-09-15 00:33:58,038 - INFO - Executing integrated test case: RBT_CRITICAL_001
+2025-09-15 00:33:58,038 - INFO - Testing false positive with image: temp_uploads\dummy_pipeline_test.jpg
+2025-09-15 00:34:55,630 - INFO - Integrated test RBT_CRITICAL_001 completed: TestResult.PASS
+2025-09-15 00:34:55,631 - INFO - Executing integrated test case: RBT_CRITICAL_002
+2025-09-15 00:34:55,631 - ERROR - Copy-move test failed: detect_copy_move_advanced() takes 2 positional arguments but 3 were given
+2025-09-15 00:34:55,633 - INFO - Integrated test RBT_CRITICAL_002 completed: TestResult.ERROR
+2025-09-15 00:34:55,633 - INFO - Executing integrated test case: RBT_CRITICAL_003
+2025-09-15 00:34:55,633 - INFO - Integrated test RBT_CRITICAL_003 completed: TestResult.PASS
+2025-09-15 00:34:55,633 - INFO - Executing integrated test case: RBT_HIGH_001
+2025-09-15 00:34:55,633 - INFO - Integrated test RBT_HIGH_001 completed: TestResult.PASS
+2025-09-15 00:34:55,633 - INFO - Executing integrated test case: RBT_HIGH_002
+2025-09-15 00:35:53,929 - INFO - Integrated test RBT_HIGH_002 completed: TestResult.PASS
+2025-09-15 00:35:53,930 - INFO - Executing integrated test case: RBT_MEDIUM_001
+2025-09-15 00:36:58,717 - INFO - Integrated test RBT_MEDIUM_001 completed: TestResult.FAIL
+2025-09-15 00:36:58,717 - INFO - Executing integrated test case: RBT_MEDIUM_002
+2025-09-15 00:36:58,717 - INFO - Integrated test RBT_MEDIUM_002 completed: TestResult.PASS
+2025-09-15 00:36:58,717 - INFO - Executing integrated test case: RBT_MEDIUM_003
+2025-09-15 00:36:58,717 - INFO - Integrated test RBT_MEDIUM_003 completed: TestResult.PASS
+2025-09-15 00:36:58,717 - INFO - Executing integrated test case: RBT_LOW_001
+2025-09-15 00:36:58,717 - INFO - Integrated test RBT_LOW_001 completed: TestResult.PASS
+2025-09-15 00:36:58,717 - INFO - Executing integrated test case: RBT_LOW_002
+2025-09-15 00:36:58,717 - INFO - Integrated test RBT_LOW_002 completed: TestResult.PASS
+2025-09-15 00:36:58,717 - INFO - Executed 10 tests
+2025-09-15 00:36:58,717 - INFO - Step 4: Calculating enhanced metrics...
+2025-09-15 00:36:58,717 - INFO - Generating enhanced report...
+2025-09-15 00:36:58,735 - INFO - Enhanced RBT cycle completed. Reports saved: rbt_reports/enhanced_rbt_report_20250915_003658.json, rbt_reports/enhanced_rbt_report_20250915_003658.html
+2025-09-15 00:45:27,817 - INFO - Discovered 4 test images
+2025-09-15 00:45:27,831 - INFO - Starting enhanced RBT cycle with real forensic integration
+2025-09-15 00:45:27,831 - INFO - Step 1: Analyzing forensic risks...
+2025-09-15 00:45:27,833 - INFO - Step 2: Generating enhanced test cases...
+2025-09-15 00:45:27,833 - INFO - Step 3: Executing tests with real forensic system...
+2025-09-15 00:45:27,833 - INFO - Executing integrated test case: RBT_CRITICAL_001
+2025-09-15 00:45:27,833 - INFO - Testing false positive with image: temp_uploads\dummy_pipeline_test.jpg
+2025-09-15 00:46:35,043 - INFO - Integrated test RBT_CRITICAL_001 completed: TestResult.PASS
+2025-09-15 00:46:35,048 - INFO - Executing integrated test case: RBT_CRITICAL_002
+2025-09-15 00:46:35,054 - ERROR - Copy-move test failed: detect_copy_move_advanced() takes 2 positional arguments but 3 were given
+2025-09-15 00:46:35,054 - INFO - Integrated test RBT_CRITICAL_002 completed: TestResult.ERROR
+2025-09-15 00:46:35,056 - INFO - Executing integrated test case: RBT_CRITICAL_003
+2025-09-15 00:46:35,056 - INFO - Integrated test RBT_CRITICAL_003 completed: TestResult.PASS
+2025-09-15 00:46:35,058 - INFO - Executing integrated test case: RBT_HIGH_001
+2025-09-15 00:46:35,058 - INFO - Integrated test RBT_HIGH_001 completed: TestResult.PASS
+2025-09-15 00:46:35,060 - INFO - Executing integrated test case: RBT_HIGH_002
+2025-09-15 00:47:35,644 - INFO - Integrated test RBT_HIGH_002 completed: TestResult.PASS
+2025-09-15 00:47:35,645 - INFO - Executing integrated test case: RBT_MEDIUM_001
+2025-09-15 00:48:38,232 - INFO - Integrated test RBT_MEDIUM_001 completed: TestResult.FAIL
+2025-09-15 00:48:38,232 - INFO - Executing integrated test case: RBT_MEDIUM_002
+2025-09-15 00:48:38,232 - INFO - Integrated test RBT_MEDIUM_002 completed: TestResult.PASS
+2025-09-15 00:48:38,232 - INFO - Executing integrated test case: RBT_MEDIUM_003
+2025-09-15 00:48:38,232 - INFO - Integrated test RBT_MEDIUM_003 completed: TestResult.PASS
+2025-09-15 00:48:38,244 - INFO - Executing integrated test case: RBT_LOW_001
+2025-09-15 00:48:38,244 - INFO - Integrated test RBT_LOW_001 completed: TestResult.PASS
+2025-09-15 00:48:38,244 - INFO - Executing integrated test case: RBT_LOW_002
+2025-09-15 00:48:38,244 - INFO - Integrated test RBT_LOW_002 completed: TestResult.PASS
+2025-09-15 00:48:38,244 - INFO - Executed 10 tests
+2025-09-15 00:48:38,244 - INFO - Step 4: Calculating enhanced metrics...
+2025-09-15 00:48:38,244 - INFO - Generating enhanced report...
+2025-09-15 00:48:38,246 - ERROR - Enhanced RBT cycle failed: name 'json' is not defined
+2025-09-15 00:48:57,694 - INFO - Discovered 4 test images
+2025-09-15 00:48:57,694 - INFO - Starting enhanced RBT cycle with real forensic integration
+2025-09-15 00:48:57,694 - INFO - Step 1: Analyzing forensic risks...
+2025-09-15 00:48:57,694 - INFO - Step 2: Generating enhanced test cases...
+2025-09-15 00:48:57,694 - INFO - Step 3: Executing tests with real forensic system...
+2025-09-15 00:48:57,694 - INFO - Executing integrated test case: RBT_CRITICAL_001
+2025-09-15 00:48:57,694 - INFO - Testing false positive with image: temp_uploads\dummy_pipeline_test.jpg
+2025-09-15 00:50:00,145 - INFO - Integrated test RBT_CRITICAL_001 completed: TestResult.PASS
+2025-09-15 00:50:00,146 - INFO - Executing integrated test case: RBT_CRITICAL_002
+2025-09-15 00:50:00,146 - ERROR - Copy-move test failed: detect_copy_move_advanced() takes 2 positional arguments but 3 were given
+2025-09-15 00:50:00,146 - INFO - Integrated test RBT_CRITICAL_002 completed: TestResult.ERROR
+2025-09-15 00:50:00,147 - INFO - Executing integrated test case: RBT_CRITICAL_003
+2025-09-15 00:50:00,147 - INFO - Integrated test RBT_CRITICAL_003 completed: TestResult.PASS
+2025-09-15 00:50:00,147 - INFO - Executing integrated test case: RBT_HIGH_001
+2025-09-15 00:50:00,147 - INFO - Integrated test RBT_HIGH_001 completed: TestResult.PASS
+2025-09-15 00:50:00,147 - INFO - Executing integrated test case: RBT_HIGH_002
+2025-09-15 00:50:56,707 - INFO - Integrated test RBT_HIGH_002 completed: TestResult.PASS
+2025-09-15 00:50:56,711 - INFO - Executing integrated test case: RBT_MEDIUM_001
+2025-09-15 00:51:57,171 - INFO - Integrated test RBT_MEDIUM_001 completed: TestResult.FAIL
+2025-09-15 00:51:57,172 - INFO - Executing integrated test case: RBT_MEDIUM_002
+2025-09-15 00:51:57,172 - INFO - Integrated test RBT_MEDIUM_002 completed: TestResult.PASS
+2025-09-15 00:51:57,172 - INFO - Executing integrated test case: RBT_MEDIUM_003
+2025-09-15 00:51:57,172 - INFO - Integrated test RBT_MEDIUM_003 completed: TestResult.PASS
+2025-09-15 00:51:57,172 - INFO - Executing integrated test case: RBT_LOW_001
+2025-09-15 00:51:57,173 - INFO - Integrated test RBT_LOW_001 completed: TestResult.PASS
+2025-09-15 00:51:57,173 - INFO - Executing integrated test case: RBT_LOW_002
+2025-09-15 00:51:57,173 - INFO - Integrated test RBT_LOW_002 completed: TestResult.PASS
+2025-09-15 00:51:57,173 - INFO - Executed 10 tests
+2025-09-15 00:51:57,173 - INFO - Step 4: Calculating enhanced metrics...
+2025-09-15 00:51:57,173 - INFO - Generating enhanced report...
+2025-09-15 00:51:57,176 - ERROR - Enhanced RBT cycle failed: Object of type bool is not JSON serializable
+2025-09-15 00:52:19,718 - INFO - Discovered 4 test images
+2025-09-15 00:52:19,719 - INFO - Starting enhanced RBT cycle with real forensic integration
+2025-09-15 00:52:19,719 - INFO - Step 1: Analyzing forensic risks...
+2025-09-15 00:52:19,719 - INFO - Step 2: Generating enhanced test cases...
+2025-09-15 00:52:19,720 - INFO - Step 3: Executing tests with real forensic system...
+2025-09-15 00:52:19,720 - INFO - Executing integrated test case: RBT_CRITICAL_001
+2025-09-15 00:52:19,720 - INFO - Testing false positive with image: temp_uploads\dummy_pipeline_test.jpg
+2025-09-15 00:53:20,107 - INFO - Integrated test RBT_CRITICAL_001 completed: TestResult.PASS
+2025-09-15 00:53:20,107 - INFO - Executing integrated test case: RBT_CRITICAL_002
+2025-09-15 00:53:20,107 - ERROR - Copy-move test failed: detect_copy_move_advanced() takes 2 positional arguments but 3 were given
+2025-09-15 00:53:20,107 - INFO - Integrated test RBT_CRITICAL_002 completed: TestResult.ERROR
+2025-09-15 00:53:20,107 - INFO - Executing integrated test case: RBT_CRITICAL_003
+2025-09-15 00:53:20,107 - INFO - Integrated test RBT_CRITICAL_003 completed: TestResult.PASS
+2025-09-15 00:53:20,107 - INFO - Executing integrated test case: RBT_HIGH_001
+2025-09-15 00:53:20,107 - INFO - Integrated test RBT_HIGH_001 completed: TestResult.PASS
+2025-09-15 00:53:20,107 - INFO - Executing integrated test case: RBT_HIGH_002
+2025-09-15 00:54:23,743 - INFO - Integrated test RBT_HIGH_002 completed: TestResult.PASS
+2025-09-15 00:54:23,743 - INFO - Executing integrated test case: RBT_MEDIUM_001
+2025-09-15 00:55:28,060 - INFO - Integrated test RBT_MEDIUM_001 completed: TestResult.FAIL
+2025-09-15 00:55:28,060 - INFO - Executing integrated test case: RBT_MEDIUM_002
+2025-09-15 00:55:28,060 - INFO - Integrated test RBT_MEDIUM_002 completed: TestResult.PASS
+2025-09-15 00:55:28,060 - INFO - Executing integrated test case: RBT_MEDIUM_003
+2025-09-15 00:55:28,060 - INFO - Integrated test RBT_MEDIUM_003 completed: TestResult.PASS
+2025-09-15 00:55:28,060 - INFO - Executing integrated test case: RBT_LOW_001
+2025-09-15 00:55:28,060 - INFO - Integrated test RBT_LOW_001 completed: TestResult.PASS
+2025-09-15 00:55:28,060 - INFO - Executing integrated test case: RBT_LOW_002
+2025-09-15 00:55:28,060 - INFO - Integrated test RBT_LOW_002 completed: TestResult.PASS
+2025-09-15 00:55:28,060 - INFO - Executed 10 tests
+2025-09-15 00:55:28,060 - INFO - Step 4: Calculating enhanced metrics...
+2025-09-15 00:55:28,060 - INFO - Generating enhanced report...
+2025-09-15 00:55:28,076 - INFO - Enhanced RBT cycle completed. Reports saved: rbt_reports/laporan_rbt_20250915_005528.json, rbt_reports/laporan_rbt_20250915_005528.html

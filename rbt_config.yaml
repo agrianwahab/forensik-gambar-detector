@@ -1,0 +1,346 @@
+# Risk-Based Testing Configuration
+# Konfigurasi untuk sistem forensik image analysis
+
+# =============================================================================
+# RISK ASSESSMENT CONFIGURATION
+# =============================================================================
+risk_assessment:
+  # Risk scoring thresholds
+  thresholds:
+    critical: 0.15    # Risk score >= 0.15
+    high: 0.10        # Risk score >= 0.10
+    medium: 0.05      # Risk score >= 0.05
+    low: 0.00         # Risk score < 0.05
+  
+  # Risk calculation weights
+  weights:
+    probability: 0.6
+    impact: 0.4
+  
+  # Component risk factors
+  components:
+    classification.py:
+      base_risk: 0.85
+      complexity_factor: 1.2
+      criticality: "high"
+    
+    validator.py:
+      base_risk: 0.82
+      complexity_factor: 1.1
+      criticality: "high"
+    
+    main.py:
+      base_risk: 0.78
+      complexity_factor: 1.0
+      criticality: "medium"
+    
+    advanced_analysis.py:
+      base_risk: 0.75
+      complexity_factor: 1.1
+      criticality: "medium"
+    
+    export_utils.py:
+      base_risk: 0.45
+      complexity_factor: 0.8
+      criticality: "low"
+    
+    visualization.py:
+      base_risk: 0.25
+      complexity_factor: 0.6
+      criticality: "low"
+
+# =============================================================================
+# TEST EXECUTION CONFIGURATION
+# =============================================================================
+test_execution:
+  # Test timeouts (in seconds)
+  timeouts:
+    critical_tests: 300
+    high_tests: 180
+    medium_tests: 120
+    low_tests: 60
+  
+  # Retry configuration
+  retry:
+    max_attempts: 3
+    retry_delay: 5  # seconds
+    retry_on_failure: true
+  
+  # Parallel execution
+  parallel:
+    enabled: true
+    max_workers: 4
+    critical_sequential: true  # Critical tests run sequentially
+  
+  # Test data paths
+  test_data:
+    base_path: "./test_data"
+    original_images: "./test_data/original"
+    manipulated_images: "./test_data/manipulated"
+    ground_truth: "./test_data/ground_truth.json"
+
+# =============================================================================
+# FORENSIC ACCURACY CONFIGURATION
+# =============================================================================
+forensic_accuracy:
+  # Acceptance thresholds
+  thresholds:
+    overall_accuracy: 0.80      # 80% minimum
+    precision: 0.85             # 85% minimum
+    recall: 0.75                # 75% minimum
+    f1_score: 0.80              # 80% minimum
+    specificity: 0.90           # 90% minimum
+  
+  # False rate limits
+  false_rates:
+    max_false_positive: 0.05    # 5% maximum
+    max_false_negative: 0.10    # 10% maximum
+  
+  # Algorithm consensus requirements
+  consensus:
+    min_agreement: 0.80         # 80% minimum agreement
+    required_algorithms: ["sift", "orb", "ela", "jpeg"]
+    consensus_threshold: 0.75   # 75% algorithms must agree
+
+# =============================================================================
+# PERFORMANCE CONFIGURATION
+# =============================================================================
+performance:
+  # Resource limits
+  limits:
+    max_memory_gb: 8.0
+    max_processing_time: 300    # seconds
+    max_cpu_percent: 90
+  
+  # Performance thresholds
+  thresholds:
+    processing_speed: 2.0       # images per minute
+    memory_efficiency: 6.0      # GB peak usage
+    cpu_utilization: 80         # percent average
+  
+  # Monitoring intervals
+  monitoring:
+    memory_check_interval: 10   # seconds
+    performance_log_interval: 30 # seconds
+
+# =============================================================================
+# REPORTING CONFIGURATION
+# =============================================================================
+reporting:
+  # Output directories
+  output:
+    reports_dir: "./rbt_reports"
+    logs_dir: "./rbt_logs"
+    artifacts_dir: "./rbt_artifacts"
+  
+  # Report formats
+  formats:
+    json: true
+    html: true
+    pdf: false
+    csv: true
+  
+  # Report content
+  content:
+    include_screenshots: true
+    include_performance_graphs: true
+    include_detailed_logs: false
+    include_test_data_summary: true
+  
+  # Dashboard configuration
+  dashboard:
+    auto_refresh: true
+    refresh_interval: 300       # seconds
+    real_time_metrics: true
+
+# =============================================================================
+# QUALITY GATES CONFIGURATION
+# =============================================================================
+quality_gates:
+  gate_1_basic_functionality:
+    threshold: 0.70
+    description: "Basic system functionality (70% pass rate)"
+    blocking: true
+    weight: 0.25
+  
+  gate_2_forensic_accuracy:
+    threshold: 0.80
+    description: "Forensic accuracy threshold (80%)"
+    blocking: true
+    weight: 0.40
+  
+  gate_3_reliability:
+    threshold: 0.85
+    description: "System reliability score (85%)"
+    blocking: false
+    weight: 0.25
+  
+  gate_4_performance:
+    threshold: 120              # seconds
+    description: "Performance threshold (120 seconds)"
+    blocking: false
+    weight: 0.10
+
+# =============================================================================
+# ALERTING CONFIGURATION
+# =============================================================================
+alerting:
+  # Alert channels
+  channels:
+    email:
+      enabled: true
+      recipients: ["forensic-team@company.com", "qa-team@company.com"]
+      smtp_server: "smtp.company.com"
+      smtp_port: 587
+    
+    slack:
+      enabled: true
+      webhook_url: "https://hooks.slack.com/services/YOUR/SLACK/WEBHOOK"
+      channel: "#forensic-alerts"
+    
+    teams:
+      enabled: false
+      webhook_url: "https://company.webhook.office.com/YOUR/TEAMS/WEBHOOK"
+  
+  # Alert thresholds
+  thresholds:
+    critical_test_failure: 0    # Zero tolerance
+    accuracy_degradation: 0.05  # 5% degradation
+    performance_degradation: 0.20 # 20% degradation
+    new_critical_risk: 1        # Any new critical risk
+  
+  # Alert frequency limits
+  frequency:
+    max_alerts_per_hour: 10
+    cooldown_period: 300        # seconds
+    escalation_delay: 1800      # seconds
+
+# =============================================================================
+# CONTINUOUS MONITORING CONFIGURATION
+# =============================================================================
+continuous_monitoring:
+  # Scheduling
+  schedule:
+    daily_critical_tests: "02:00"     # 2 AM daily
+    weekly_full_assessment: "MON 09:00" # Monday 9 AM
+    monthly_trend_analysis: "1 10:00"   # 1st of month 10 AM
+  
+  # Trend analysis
+  trend_analysis:
+    lookback_days: 30
+    min_data_points: 7
+    trend_threshold: 0.05       # 5% change threshold
+  
+  # Historical data retention
+  data_retention:
+    test_results: 90            # days
+    performance_metrics: 180    # days
+    risk_assessments: 365       # days
+    detailed_logs: 30           # days
+
+# =============================================================================
+# INTEGRATION CONFIGURATION
+# =============================================================================
+integration:
+  # CI/CD integration
+  cicd:
+    jenkins:
+      enabled: false
+      job_url: "http://jenkins.company.com/job/forensic-rbt"
+    
+    github_actions:
+      enabled: true
+      workflow_file: ".github/workflows/rbt.yml"
+    
+    azure_devops:
+      enabled: false
+      pipeline_id: "forensic-rbt-pipeline"
+  
+  # External tools
+  tools:
+    jira:
+      enabled: true
+      server: "https://company.atlassian.net"
+      project_key: "FORENSIC"
+    
+    confluence:
+      enabled: true
+      space_key: "FORENSIC"
+      page_title: "RBT Dashboard"
+  
+  # Database integration
+  database:
+    enabled: true
+    type: "postgresql"          # postgresql, mysql, sqlite
+    host: "localhost"
+    port: 5432
+    database: "forensic_rbt"
+    username: "rbt_user"
+    # password should be set via environment variable RBT_DB_PASSWORD
+
+# =============================================================================
+# ADVANCED CONFIGURATION
+# =============================================================================
+advanced:
+  # Machine learning for risk prediction
+  ml_risk_prediction:
+    enabled: false
+    model_path: "./models/risk_prediction.pkl"
+    retrain_interval: 30        # days
+    feature_importance_threshold: 0.1
+  
+  # Custom risk factors
+  custom_risk_factors:
+    code_complexity: 0.15
+    test_coverage: -0.10        # Negative = risk reduction
+    historical_defects: 0.20
+    team_experience: -0.05
+  
+  # Experimental features
+  experimental:
+    ai_test_generation: false
+    predictive_analytics: false
+    automated_risk_mitigation: false
+
+# =============================================================================
+# ENVIRONMENT-SPECIFIC OVERRIDES
+# =============================================================================
+environments:
+  development:
+    risk_assessment:
+      thresholds:
+        critical: 0.20          # More lenient in dev
+    test_execution:
+      timeouts:
+        critical_tests: 600     # Longer timeouts in dev
+  
+  staging:
+    forensic_accuracy:
+      thresholds:
+        overall_accuracy: 0.85  # Higher standards in staging
+  
+  production:
+    quality_gates:
+      gate_2_forensic_accuracy:
+        threshold: 0.90         # Highest standards in production
+        blocking: true
+    
+    alerting:
+      thresholds:
+        critical_test_failure: 0 # Zero tolerance in production
+
+# =============================================================================
+# METADATA
+# =============================================================================
+metadata:
+  version: "1.0.0"
+  created_date: "2025-01-XX"
+  last_modified: "2025-01-XX"
+  author: "Forensic Testing Team"
+  description: "Risk-Based Testing configuration for forensic image analysis system"
+  
+  # Configuration validation
+  validation:
+    schema_version: "1.0"
+    required_sections: ["risk_assessment", "test_execution", "forensic_accuracy"]
+    optional_sections: ["performance", "reporting", "alerting"]

@@ -1,0 +1,2 @@
+# System packages for Hugging Face Spaces
+# (currently empty, but can add system deps if needed)
